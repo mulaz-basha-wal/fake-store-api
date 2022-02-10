@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Ecommerce from './Ecommerce';
+import Categories from './Categories';
+import AllProducts from './AllProducts';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='APP'>
+      {true?<Ecommerce/>:""}
+      <AllProducts/>
+      <Categories/>
     </div>
   );
 }
